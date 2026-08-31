@@ -8,8 +8,8 @@ if(isset($_SESSION["username"]))
 
 if($_SERVER["REQUEST_METHOD"]=="POST")
     {
-        $user=$_POST["username"] ?? '';
-        $pass=$_POST["password"] ?? '';
+        $user=$_POST["username"];
+        $pass=$_POST["password"] ;
         $remember=isset($_POST["remember"]);
 
         if($user=="admin" && $pass=="1234")
